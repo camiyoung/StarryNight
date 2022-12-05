@@ -1,0 +1,319 @@
+/* 기본 별 */
+
+.roomStar {
+  position: absolute;
+  background: linear-gradient(#5f91ff, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #699bff);
+}
+body .roomStar::before {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffed49,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 10000ms ease-in-out infinite;
+}
+body .roomStar::after {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffed49,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 10000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+body .roomStar:nth-child(1) {
+  animation-delay: 3000ms;
+}
+body .roomStar:nth-child(1)::before,
+body .roomStar:nth-child(1)::after {
+  animation-delay: 0ms;
+}
+body .roomStar:nth-child(2) {
+  animation-delay: 5000ms;
+}
+body .roomStar:nth-child(2)::before,
+body .roomStar:nth-child(2)::after {
+  animation-delay: 2000ms;
+}
+
+/* 처녀자리 */
+
+.virgo {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#5f91ff, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #699bff);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .virgo::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffffff,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .virgo::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffffff,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.leo {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#ff5f5f, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #ff5f5f);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .leo::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffdfdf,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .leo::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffdfdf,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.lyra {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#ffde23, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #ffde23);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .lyra::before {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #fffddf,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .lyra::after {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #fffddf,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.perseus {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#43f560, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #43f560);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .perseus::before {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #dfffe1,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .perseus::after {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #dfffe1,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.sagitta {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#cb43f5, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #cb43f5);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .sagitta::before {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #deacff,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .sagitta::after {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #deacff,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.cassiopeia {
+  position: absolute;
+  /* height: 1px; */
+  background: linear-gradient(#43f5d7, rgba(0, 0, 255, 0));
+  border-radius: 0px;
+  filter: drop-shadow(0 0 4px #43f5d7);
+  /* animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite; */
+}
+body .cassiopeia::before {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #cbfff8,
+    rgba(0, 0, 255, 0)
+  );
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+}
+body .cassiopeia::after {
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #cbfff8,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 7000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+@keyframes shining {
+  0% {
+    width: 8px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 8px;
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.8;
+    width: 8px;
+  }
+}

@@ -1,0 +1,34 @@
+version: "3"
+services:
+  mysql:
+    image: mysql
+    
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: dreammungz
+      MYSQL_ROOT_PASSWORD: ssafyNFTa605!
+    volumes:
+      - /mysql:/var/lib/mysql
+    ports:
+       - 3306:3306
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./nginx/conf.d:/etc/nginx/conf.d
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /jenkins:/var/jenkins_home  
+    ports:
+      - 9090:8080
+    privileged: true
+    user: root

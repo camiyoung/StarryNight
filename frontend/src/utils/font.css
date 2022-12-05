@@ -1,0 +1,15 @@
+@import url("https://webfontworld.github.io/Cafe24Shiningstar/Cafe24Shiningstar.css");
+@import url("https://webfontworld.github.io/Cafe24Oneprettynight/Cafe24Oneprettynight.css");
+@import url("https://webfontworld.github.io/yangheeryu/GowunBatang.css");
+
+.shiningStar {
+  font-family: "Cafe24Shiningstar";
+}
+
+.prettyNight {
+  font-family: "Cafe24Oneprettynight";
+}
+
+.gowunBatang {
+  font-family: "GowunBatang";
+}

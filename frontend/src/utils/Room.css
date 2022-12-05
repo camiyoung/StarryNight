@@ -1,0 +1,17 @@
+.telescopeShow:hover {
+  background: url("../../public/assets/furniture/망원경최종2.png");
+  cursor: pointer;
+}
+
+.bookShow:hover {
+  background: url("../../public/assets/furniture/책장최종2.png");
+  cursor: pointer;
+}
+
+.logout {
+  display: none;
+}
+
+.nickname:hover .logout {
+  display: block;
+}
